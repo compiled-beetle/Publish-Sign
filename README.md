@@ -29,9 +29,9 @@ Create signatures for internet post and stuff... So people know it's you.
 
 ## LICENSING
 
-This project is licensed under the MIT License (here)[LICENSE.md].
+This project is licensed under the MIT License [here](LICENSE.md).
 
 Additional libraries used in this project are licensed under their respective licenses. Check the `package.json` file
 for more information.
 
-> With 💙 by (compiled-beetle)[https://github.com/compiled-beetle]
+> With 💙 by [compiled-beetle](https://github.com/compiled-beetle)
