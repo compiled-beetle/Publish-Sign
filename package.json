@@ -1,0 +1,30 @@
+{
+    "name": "publish-sign",
+    "version": "0.0.1",
+    "description": " Create signatures for internet post and stuff... So people know it's you.",
+    "main": "server.js",
+    "scripts": {
+        "test": "nodemon run server.js",
+        "start": "npm server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/compiled-beetle/Publish-Sign.git"
+    },
+    "keywords": [
+        "signature",
+        "node",
+        "cryptography",
+        "server",
+        "client"
+    ],
+    "author": "compiled-beetle",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/compiled-beetle/Publish-Sign/issues"
+    },
+    "homepage": "https://github.com/compiled-beetle/Publish-Sign#readme",
+    "dev-dependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
