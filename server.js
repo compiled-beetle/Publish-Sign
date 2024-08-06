@@ -1,18 +1,19 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const env = require('dotenv').config();
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = env.SERVER_HOST;
+const port = env.SERVER_PORT;
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {  
     if (req.url === '/favicon.ico') {
         const faviconPath = path.join(__dirname, 'favicon.ico');
         fs.readFile(faviconPath, (err, data) => {
             if (err) {
                 res.statusCode = 500;
                 res.setHeader('Content-Type', 'text/plain');
-                res.end('Error loading favicon');
+                res.end('error loading favicon');
             } else {
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'image/x-icon');
@@ -30,5 +31,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`running at http://${hostname}:${port}/`);
+    console.log(`running at ${env.SERVER_HOST}:${env.SERVER_PORT}/`);
 });
